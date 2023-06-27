@@ -1,3 +1,3 @@
 export default function Home() {
-  return <h1>Hello world! That is my first project with next.js</h1>;
+  return <div className="bg-blue-100 bg-cover"></div>
 }
