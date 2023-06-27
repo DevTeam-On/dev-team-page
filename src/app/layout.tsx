@@ -1,8 +1,18 @@
 import HeaderComponent from '@/components/Header'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Maven_Pro, Titillium_Web, JetBrains_Mono } from 'next/font/google'
+import Container from '@/components/Container/index'
 
-const inter = Inter({ subsets: ['latin'] })
+const mavenPro = Maven_Pro({ subsets: ['latin'], variable: '--font-mavem-pro' })
+const jetBrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-jetbrains'
+})
+const titilliumWeb = Titillium_Web({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-titillium-web'
+})
 
 export const metadata = {
   title: 'Dev Team',
@@ -17,8 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        // className={inter.className}
-        className="h-screen w-screen bg-gradient-to-t from-blue-400 to-blue-100 bg-no-repeat"
+        className={`${mavenPro.variable} ${jetBrainsMono.variable} ${titilliumWeb.variable} light:bg-blue-50 h-screen w-screen from-blue-400 to-blue-100 bg-no-repeat dark:bg-gradient-to-t`}
       >
         <HeaderComponent />
         {children}

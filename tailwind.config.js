@@ -7,6 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        mavenPro: 'var(--font-mavem-pro)',
+        jetBrainsMono: 'var(--font-jetbrains)',
+        titilliumWeb: 'var(--font-titillium-web)'
+      },
       colors: {
         gray: {
           50: '#F0F0F0',
@@ -24,6 +29,11 @@ module.exports = {
         yellow: { 800: '#FFB22B' },
         success: '#67A950',
         error: '#BE3737'
+      },
+      screens: {
+        tablet: '640px',
+        laptop: '1024px',
+        desktop: '1280px'
       }
     }
   },
