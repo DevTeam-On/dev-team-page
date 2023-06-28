@@ -1,7 +1,6 @@
 import HeaderComponent from '@/components/Header'
 import './globals.css'
 import { Maven_Pro, Titillium_Web, JetBrains_Mono } from 'next/font/google'
-import Container from '@/components/Container/index'
 
 const mavenPro = Maven_Pro({ subsets: ['latin'], variable: '--font-mavem-pro' })
 const jetBrainsMono = JetBrains_Mono({
@@ -15,7 +14,7 @@ const titilliumWeb = Titillium_Web({
 })
 
 export const metadata = {
-  title: 'Dev Team',
+  title: 'Dev Team | Desenvolvimento de softwares',
   description: 'Página de serviços da Dev Team, venha desenvolver sua ideia.'
 }
 
