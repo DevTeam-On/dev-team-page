@@ -1,3 +1,11 @@
+import InitialContentPage from '@/components/InitalContentPage'
+
 export default function Home() {
-  return <div className="bg-blue-100 bg-cover"></div>
+  return (
+    <div>
+      <div className="pt-48">
+        <InitialContentPage />
+      </div>
+    </div>
+  )
 }
