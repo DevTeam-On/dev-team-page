@@ -5,7 +5,7 @@ import Container from '@/components/Container'
 
 export default function HeaderComponent() {
   return (
-    <nav className="fixed top-0 w-full border-b-2 border-yellow-800 bg-blue-200/20 px-24 py-4 backdrop-blur-sm">
+    <nav className="fixed top-0 w-full select-none border-b-2 border-yellow-800 bg-blue-200/20 px-24 py-4 backdrop-blur-sm">
       <Container>
         <div className="flex items-center justify-between">
           <a href="#">
