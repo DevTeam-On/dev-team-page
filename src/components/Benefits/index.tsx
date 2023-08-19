@@ -1,5 +1,5 @@
 import Container from '@/components/Container'
-import ItemBenefits from './ItemBenefits'
+import ItemBenefits from '../ItemBenefits'
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md'
 import ContainerBenefits from './ContainerBenefits'
 import OutlineButton from '../OutlineButton'

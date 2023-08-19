@@ -1,5 +1,5 @@
 import { BsCheckLg } from 'react-icons/bs'
-import ItemBenefits from '../ItemBenefits'
+import ItemBenefits from '../../ItemBenefits'
 
 export default function ContainerBenefits() {
   return (
