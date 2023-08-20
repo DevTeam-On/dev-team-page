@@ -5,9 +5,9 @@ import Container from '@/components/Container'
 export default function InitialContentPage() {
   return (
     <Container>
-      <div className="flex h-screen select-none flex-row items-center justify-evenly">
-        <div className="flex w-[700px] flex-col gap-6 border-l-4 border-yellow-800 pl-6">
-          <h1 className="font-mavenPro text-6xl font-semibold text-white">
+      <div className="flex h-screen select-none flex-col-reverse items-center justify-center p-6 laptop:mt-0 laptop:flex-row laptop:justify-evenly ">
+        <div className="flex max-w-[700px] flex-col gap-2 border-yellow-800 pl-6 text-center laptop:gap-6 laptop:border-l-4 laptop:text-start">
+          <h1 className="font-mavenPro text-4xl font-semibold text-white laptop:text-6xl">
             Nosso trabalho
           </h1>
           <p className="font-titilliumWeb text-base text-white">
