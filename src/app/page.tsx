@@ -1,3 +1,4 @@
+import BaseBoard from '@/components/Baseboard'
 import Benefits from '@/components/Benefits'
 import InitialContentPage from '@/components/InitalContentPage'
 import OurClients from '@/components/OurClients'
@@ -12,6 +13,7 @@ export default function Home() {
       <OurServices />
       <OurTeam />
       <OurClients />
+      <BaseBoard />
     </>
   )
 }
