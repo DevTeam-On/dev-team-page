@@ -5,7 +5,10 @@ import Container from '../Container'
 
 export default function OurServices() {
   return (
-    <div className="mt-48 flex w-full select-none justify-evenly border-y-2 border-yellow-800 bg-blue-400 py-16">
+    <div
+      id="OurServices"
+      className="mt-48 flex w-full select-none justify-evenly border-y-2 border-yellow-800 bg-blue-400 py-16"
+    >
       <Container>
         <div className="flex w-full flex-col-reverse items-center justify-evenly gap-12 laptop:flex-row laptop:gap-36">
           <div>

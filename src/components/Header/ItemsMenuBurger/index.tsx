@@ -3,6 +3,7 @@ import Image from 'next/image'
 import RenderImage from '@/assets/images/DevTeamLogo.png'
 import { IoMdClose } from 'react-icons/io'
 import { ItemsMenuBurgerProps } from './types'
+import Link from 'next/link'
 
 export default function ItemsMenuBurger({
   isOpen,
@@ -27,21 +28,31 @@ export default function ItemsMenuBurger({
         height={150}
       />
       <ul className="flex list-none flex-col items-center justify-center gap-4 font-mavenPro text-2xl">
-        <li className="cursor-pointer text-yellow-800 transition-colors duration-300 ease-in hover:text-yellow-700">
-          Início
-        </li>
-        <li className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800">
-          Serviços
-        </li>
-        <li className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800">
-          Sobre Nós
-        </li>
-        <li className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800">
-          Contato
-        </li>
-        <li className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800">
-          Nossos projetos
-        </li>
+        <Link onClick={() => setIsOpen(false)} href={'#'}>
+          <li className="cursor-pointer text-yellow-800 transition-colors duration-300 ease-in hover:text-yellow-700">
+            Início
+          </li>
+        </Link>
+        <Link onClick={() => setIsOpen(false)} href={'#OurServices'}>
+          <li className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800">
+            Serviços
+          </li>
+        </Link>
+        <Link onClick={() => setIsOpen(false)} href={'#ItemBenefits'}>
+          <li className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800">
+            Sobre Nós
+          </li>
+        </Link>
+        <Link onClick={() => setIsOpen(false)} href={'#Baseboard'}>
+          <li className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800">
+            Contato
+          </li>
+        </Link>
+        <Link onClick={() => setIsOpen(false)} href={'#OurClients'}>
+          <li className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800">
+            Nossos projetos
+          </li>
+        </Link>
       </ul>
     </div>
   )

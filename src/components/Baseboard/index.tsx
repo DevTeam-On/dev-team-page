@@ -3,7 +3,10 @@ import RenderImage from '@/assets/images/render_logo.png'
 
 export default function BaseBoard() {
   return (
-    <div className="mt-36 flex w-full flex-col items-center justify-center border-t-2 border-yellow-800 bg-blue-200 p-16 font-titilliumWeb text-white laptop:flex-row laptop:justify-evenly">
+    <div
+      id="Baseboard"
+      className="mt-36 flex w-full flex-col items-center justify-center border-t-2 border-yellow-800 bg-blue-200 p-16 font-titilliumWeb text-white laptop:flex-row laptop:justify-evenly"
+    >
       <div className="flex gap-12 laptop:gap-24">
         <div className="flex flex-col gap-4">
           <h1 className="font-mavenPro text-2xl font-semibold">

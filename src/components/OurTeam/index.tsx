@@ -4,7 +4,10 @@ import ContainerProfessionals from './ContainerProfessionals'
 export default function OurTeam() {
   return (
     <Container>
-      <div className="mb-36 mt-36 flex select-none flex-col text-center laptop:text-start">
+      <div
+        id="OurTeam"
+        className="mb-36 mt-36 flex select-none flex-col text-center laptop:text-start"
+      >
         <div className="mb-24 flex flex-col gap-6 border-yellow-800 laptop:border-l-4 laptop:pl-6">
           <h1 className="font-mavenPro text-4xl font-semibold text-white laptop:text-6xl">
             Nossa Equipe

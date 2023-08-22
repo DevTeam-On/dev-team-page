@@ -7,7 +7,10 @@ import OutlineButton from '../OutlineButton'
 export default function Benefits() {
   return (
     <Container>
-      <div className="m-4 flex select-none flex-col items-center justify-center gap-24 border-2 border-yellow-800 p-8 laptop:flex-row laptop:justify-evenly laptop:p-24">
+      <div
+        id="ItemBenefits"
+        className="m-4 flex select-none flex-col items-center justify-center gap-24 border-2 border-yellow-800 p-8 laptop:flex-row laptop:justify-evenly laptop:p-24"
+      >
         <div className="flex flex-col gap-4 text-center text-white laptop:max-w-[60%] laptop:text-start">
           <h1 className="font-mavenPro text-4xl font-semibold laptop:text-6xl">
             Mas por que a <b className="text-yellow-800">Dev Team</b>?
