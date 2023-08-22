@@ -5,7 +5,7 @@ import Felipe from '@/assets/images/felipe_moreira.jpg'
 
 export default function ContainerProfessionals() {
   return (
-    <div className="flex items-center justify-evenly">
+    <div className="flex flex-col items-center gap-8 laptop:flex-row laptop:justify-evenly">
       <CardPerson
         description="Desenvolvedor FullStack e product manager da equipe. Responsável pela gestão, design e desenvolvimento."
         name="Roberto Felipe"
