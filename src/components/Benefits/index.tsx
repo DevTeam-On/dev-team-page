@@ -7,9 +7,9 @@ import OutlineButton from '../OutlineButton'
 export default function Benefits() {
   return (
     <Container>
-      <div className="flex select-none flex-row items-center justify-evenly gap-24 border-2 border-yellow-800 p-24">
-        <div className="flex max-w-[60%] flex-col gap-4 text-start text-white">
-          <h1 className="font-mavenPro text-4xl font-semibold">
+      <div className="m-4 flex select-none flex-col items-center justify-center gap-24 border-2 border-yellow-800 p-8 laptop:flex-row laptop:justify-evenly laptop:p-24">
+        <div className="flex flex-col gap-4 text-center text-white laptop:max-w-[60%] laptop:text-start">
+          <h1 className="font-mavenPro text-4xl font-semibold laptop:text-6xl">
             Mas por que a <b className="text-yellow-800">Dev Team</b>?
           </h1>
           <p className="font-titilliumWeb">
@@ -25,7 +25,7 @@ export default function Benefits() {
             <b className="text-yellow-800">inovadoras</b> para alcançarmos
             resultados acima do esperado.
           </p>
-          <div className="mt-8">
+          <div className="mt-8 flex justify-center laptop:justify-start">
             <OutlineButton
               text="Entrar em contato"
               icon={<MdKeyboardDoubleArrowRight size={24} color="#FFB22B" />}
