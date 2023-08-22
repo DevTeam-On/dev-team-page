@@ -17,8 +17,8 @@ export default function OurServices() {
             />
           </div>
 
-          <div className="flex flex-col items-start gap-8 laptop:gap-16">
-            <h1 className=" font-mavenPro text-4xl font-semibold text-white laptop:text-6xl">
+          <div className="flex flex-col  items-center gap-8 laptop:items-start laptop:gap-16">
+            <h1 className="font-mavenPro text-4xl font-semibold text-white laptop:text-6xl">
               Nossos Serviços
             </h1>
             <ContainerItems />
