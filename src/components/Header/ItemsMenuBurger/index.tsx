@@ -12,7 +12,7 @@ export default function ItemsMenuBurger({
     <div
       className={`${
         isOpen ? 'flex' : 'hidden'
-      } fixed bottom-0 left-0 right-0 top-0 z-20 select-none flex-col items-center justify-evenly bg-black/90 backdrop-blur-sm`}
+      } fixed left-0 right-0 top-0 z-20 h-screen select-none flex-col items-center justify-evenly bg-black/90 backdrop-blur-sm`}
     >
       <IoMdClose
         size={30}
