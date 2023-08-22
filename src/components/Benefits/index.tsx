@@ -1,5 +1,5 @@
 import Container from '@/components/Container'
-import ItemBenefits from '../ItemBenefits'
+import Link from 'next/link'
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md'
 import ContainerBenefits from './ContainerBenefits'
 import OutlineButton from '../OutlineButton'
@@ -29,10 +29,12 @@ export default function Benefits() {
             resultados acima do esperado.
           </p>
           <div className="mt-8 flex justify-center laptop:justify-start">
-            <OutlineButton
-              text="Entrar em contato"
-              icon={<MdKeyboardDoubleArrowRight size={24} color="#FFB22B" />}
-            />
+            <Link href={'#Baseboard'}>
+              <OutlineButton
+                text="Entrar em contato"
+                icon={<MdKeyboardDoubleArrowRight size={24} color="#FFB22B" />}
+              />
+            </Link>
           </div>
         </div>
 
