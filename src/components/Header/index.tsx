@@ -8,7 +8,7 @@ import ItemsMenuBurger from './ItemsMenuBurger'
 import { useState } from 'react'
 
 export default function HeaderComponent() {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <>
