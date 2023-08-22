@@ -1,8 +1,9 @@
 'use client'
 
 import { RiMenu4Fill } from 'react-icons/ri'
+import { ItemsHeaderProps } from './types'
 
-export default function ItemsHeader() {
+export default function ItemsHeader({ setIsOpen }: ItemsHeaderProps) {
   return (
     <>
       <div className="hidden justify-center font-titilliumWeb tablet:flex">
@@ -29,7 +30,7 @@ export default function ItemsHeader() {
         <RiMenu4Fill
           size={35}
           color="#fff"
-          onClick={() => alert('Menu')}
+          onClick={() => setIsOpen(true)}
           className="cursor-pointer"
         />
       </div>
