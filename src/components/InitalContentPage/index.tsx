@@ -6,7 +6,7 @@ export default function InitialContentPage() {
   return (
     <Container>
       <div className="flex h-screen select-none flex-col-reverse items-center justify-center p-6 laptop:mt-0 laptop:flex-row laptop:justify-evenly ">
-        <div className="flex max-w-[700px] flex-col gap-2 border-yellow-800 pl-6 text-center laptop:gap-6 laptop:border-l-4 laptop:text-start">
+        <div className="flex max-w-[700px] flex-col gap-2 border-yellow-800 text-center laptop:gap-6 laptop:border-l-4 laptop:pl-6 laptop:text-start">
           <h1 className="font-mavenPro text-4xl font-semibold text-white laptop:text-6xl">
             Nosso trabalho
           </h1>
