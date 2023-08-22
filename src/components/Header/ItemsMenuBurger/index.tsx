@@ -4,6 +4,8 @@ import RenderImage from '@/assets/images/DevTeamLogo.png'
 import { IoMdClose } from 'react-icons/io'
 import { ItemsMenuBurgerProps } from './types'
 import Link from 'next/link'
+import { container, item } from '../animation'
+import { motion } from 'framer-motion'
 
 export default function ItemsMenuBurger({
   isOpen,
@@ -27,33 +29,53 @@ export default function ItemsMenuBurger({
         width={150}
         height={150}
       />
-      <ul className="flex list-none flex-col items-center justify-center gap-4 font-mavenPro text-2xl">
+      <motion.ul
+        variants={container}
+        initial="hidden"
+        animate="visible"
+        className="flex list-none flex-col items-center justify-center gap-4 font-mavenPro text-2xl"
+      >
         <Link onClick={() => setIsOpen(false)} href={'#'}>
-          <li className="cursor-pointer text-yellow-800 transition-colors duration-300 ease-in hover:text-yellow-700">
+          <motion.li
+            variants={item}
+            className="cursor-pointer text-yellow-800 transition-colors duration-300 ease-in hover:text-yellow-700"
+          >
             Início
-          </li>
+          </motion.li>
         </Link>
         <Link onClick={() => setIsOpen(false)} href={'#OurServices'}>
-          <li className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800">
+          <motion.li
+            variants={item}
+            className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800"
+          >
             Serviços
-          </li>
+          </motion.li>
         </Link>
         <Link onClick={() => setIsOpen(false)} href={'#ItemBenefits'}>
-          <li className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800">
+          <motion.li
+            variants={item}
+            className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800"
+          >
             Sobre Nós
-          </li>
+          </motion.li>
         </Link>
         <Link onClick={() => setIsOpen(false)} href={'#Baseboard'}>
-          <li className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800">
+          <motion.li
+            variants={item}
+            className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800"
+          >
             Contato
-          </li>
+          </motion.li>
         </Link>
         <Link onClick={() => setIsOpen(false)} href={'#OurClients'}>
-          <li className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800">
+          <motion.li
+            variants={item}
+            className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800"
+          >
             Nossos projetos
-          </li>
+          </motion.li>
         </Link>
-      </ul>
+      </motion.ul>
     </div>
   )
 }

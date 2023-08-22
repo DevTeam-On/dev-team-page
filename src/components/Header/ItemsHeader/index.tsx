@@ -1,40 +1,61 @@
 'use client'
-
+import { motion } from 'framer-motion'
 import { RiMenu4Fill } from 'react-icons/ri'
 import { ItemsHeaderProps } from './types'
 import Link from 'next/link'
+import { container, item } from '../animation'
 
 export default function ItemsHeader({ setIsOpen }: ItemsHeaderProps) {
   return (
     <>
       <div className="hidden justify-center font-titilliumWeb tablet:flex">
-        <ul className="bg flex list-none space-x-16 text-center ">
+        <motion.ul
+          variants={container}
+          initial="hidden"
+          animate="visible"
+          className="bg flex list-none space-x-16 text-center "
+        >
           <Link href={'#'}>
-            <li className="cursor-pointer text-yellow-800 transition-colors duration-300 ease-in hover:text-yellow-700">
+            <motion.li
+              variants={item}
+              className="cursor-pointer text-yellow-800 transition-colors duration-300 ease-in hover:text-yellow-700"
+            >
               Início
-            </li>
+            </motion.li>
           </Link>
           <Link href={'#OurServices'}>
-            <li className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800">
+            <motion.li
+              variants={item}
+              className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800"
+            >
               Serviços
-            </li>
+            </motion.li>
           </Link>
           <Link href={'#ItemBenefits'}>
-            <li className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800">
+            <motion.li
+              variants={item}
+              className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800"
+            >
               Sobre Nós
-            </li>
+            </motion.li>
           </Link>
           <Link href={'#OurClients'}>
-            <li className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800">
+            <motion.li
+              variants={item}
+              className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800"
+            >
               Nossos projetos
-            </li>
+            </motion.li>
           </Link>
           <Link href={'#Baseboard'}>
-            <li className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800">
+            <motion.li
+              variants={item}
+              className="cursor-pointer text-gray-50 transition-colors duration-300 ease-in hover:text-yellow-800"
+            >
               Contato
-            </li>
+            </motion.li>
           </Link>
-        </ul>
+        </motion.ul>
       </div>
 
       <div className="tablet:hidden">
