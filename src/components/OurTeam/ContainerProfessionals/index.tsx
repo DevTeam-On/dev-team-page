@@ -1,6 +1,6 @@
 import CardPerson from '../CardPerson'
 import Roberto from '@/assets/images/roberto_felipe.jpg'
-import Vonicius from '@/assets/images/vinicius_freitas.jpg'
+import Vinicius from '@/assets/images/vinicius_freitas.jpg'
 import Felipe from '@/assets/images/felipe_moreira.jpg'
 
 export default function ContainerProfessionals() {
@@ -16,17 +16,17 @@ export default function ContainerProfessionals() {
 
       <CardPerson
         description="Desenvolvedor FullStack e product manager da equipe. Responsável pela gestão, design e desenvolvimento."
-        name="Vinicius Feitas"
-        gitHub="https://github.com/RobertooFelipe"
-        linkedin="https://www.linkedin.com/in/robertoofelipe/"
-        image={Vonicius}
+        name="Vinicius Freitas"
+        gitHub="https://github.com/viniciusFreitas00"
+        linkedin="https://www.linkedin.com/in/vinicius-freire-de-freitas-94105a20b/"
+        image={Vinicius}
       />
 
       <CardPerson
         description="Desenvolvedor FullStack e product manager da equipe. Responsável pela gestão, design e desenvolvimento."
         name="Felipe Moreira"
-        gitHub="https://github.com/RobertooFelipe"
-        linkedin="https://www.linkedin.com/in/robertoofelipe/"
+        gitHub="https://github.com/FeMoreira07"
+        linkedin="https://www.linkedin.com/in/felipe-moreira-1b8677230/"
         image={Felipe}
       />
     </div>
