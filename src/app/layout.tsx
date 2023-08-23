@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${mavenPro.variable} ${jetBrainsMono.variable} ${titilliumWeb.variable} light:bg-blue-50 h-full w-full from-blue-400 to-blue-100 bg-no-repeat dark:bg-gradient-to-t`}
+        className={`${mavenPro.variable} ${jetBrainsMono.variable} ${titilliumWeb.variable} h-full w-full bg-gradient-to-t from-blue-400 to-blue-100 bg-no-repeat`}
       >
         <HeaderComponent />
         {children}
