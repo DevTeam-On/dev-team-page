@@ -16,11 +16,13 @@ export default function BaseBoard() {
             <div>
               <h2 className="font-semibold">E-mail</h2>
               <p>devteam@gmail.com</p>
+              <p>feliperoberto092@gmail.com</p>
             </div>
             <div>
               <h2 className="font-semibold">Telefones</h2>
+              <p>(11) 95080-7074</p>
               <p>(11) 94295-3291</p>
-              <p>(11) 94295-3291</p>
+              <p>(11) 97443-9730</p>
             </div>
           </div>
         </div>
