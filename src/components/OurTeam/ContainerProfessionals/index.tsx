@@ -1,13 +1,45 @@
+'use client'
+import { useEffect } from 'react'
+import { useAnimation, motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 import CardPerson from '../CardPerson'
 import Roberto from '@/assets/images/roberto_felipe.jpg'
 import Vinicius from '@/assets/images/vinicius_freitas.jpg'
 import Felipe from '@/assets/images/felipe_moreira.jpg'
+import Adrian from '@/assets/images/adrian_moretti.png'
 
 export default function ContainerProfessionals() {
+  const controls = useAnimation()
+  const [ref, inView] = useInView()
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible')
+    }
+  }, [controls, inView])
+
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2
+      }
+    }
+  }
+
   return (
-    <div className="flex flex-col items-center gap-8 laptop:flex-row laptop:justify-evenly">
+    <motion.div
+      ref={ref}
+      variants={container}
+      initial="hidden"
+      animate={controls}
+      className="flex flex-col items-center gap-8 laptop:flex-row laptop:justify-evenly"
+    >
       <CardPerson
-        description="Desenvolvedor FullStack e product manager da equipe. Responsável pela gestão, design e desenvolvimento."
+        description="CEO e fundador da DevTeam, desenvolvedor FullStack e product manager da equipe. Responsável pela gestão, design e desenvolvimento."
         name="Roberto Felipe"
         gitHub="https://github.com/RobertooFelipe"
         linkedin="https://www.linkedin.com/in/robertoofelipe/"
@@ -15,7 +47,15 @@ export default function ContainerProfessionals() {
       />
 
       <CardPerson
-        description="Desenvolvedor FullStack e product manager da equipe. Responsável pela gestão, design e desenvolvimento."
+        description="CEO e fundador da DevTeam, desenvolvedor Front End de sistemas e aplicações."
+        name="Felipe Moreira"
+        gitHub="https://github.com/FeMoreira07"
+        linkedin="https://www.linkedin.com/in/felipe-moreira-1b8677230/"
+        image={Felipe}
+      />
+
+      <CardPerson
+        description="Tech Lead da equipe, responsável por gerenciar e conduzir a parte técnica dos projetos."
         name="Vinicius Freitas"
         gitHub="https://github.com/viniciusFreitas00"
         linkedin="https://www.linkedin.com/in/vinicius-freire-de-freitas-94105a20b/"
@@ -23,12 +63,10 @@ export default function ContainerProfessionals() {
       />
 
       <CardPerson
-        description="Desenvolvedor FullStack e product manager da equipe. Responsável pela gestão, design e desenvolvimento."
-        name="Felipe Moreira"
-        gitHub="https://github.com/FeMoreira07"
-        linkedin="https://www.linkedin.com/in/felipe-moreira-1b8677230/"
-        image={Felipe}
+        description="Product Owner da equipe, responsável pelo Marketing, orçamentos e levantamento de requisistos com clientes."
+        name="Adrian Moretti"
+        image={Adrian}
       />
-    </div>
+    </motion.div>
   )
 }

@@ -4,6 +4,6 @@ export type CardPersonProps = {
   image: StaticImageData
   name: string
   description: string
-  gitHub: string
-  linkedin: string
+  gitHub?: string
+  linkedin?: string
 }
