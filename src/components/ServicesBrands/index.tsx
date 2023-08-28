@@ -19,6 +19,7 @@ import Tailwind from '@/assets/images/tailwind.png'
 import Vercel from '@/assets/images/vercel.png'
 import Vite from '@/assets/images/vite.png'
 import { container, itemImage } from './animation'
+import Container from '../Container'
 
 export function ServicesBrands() {
   const controls = useAnimation()
@@ -46,22 +47,24 @@ export function ServicesBrands() {
   ]
 
   return (
-    <motion.div
-      ref={ref}
-      variants={container}
-      initial="hidden"
-      animate={controls}
-      className="mt-36 flex flex-wrap items-center justify-center gap-8 laptop:gap-24 laptop:p-8"
-    >
-      {techs.map((item: any) => (
-        <motion.div key={item.name} variants={itemImage}>
-          <Image
-            src={item.image}
-            alt={item.name}
-            className="aspect-auto w-[80px] laptop:w-[120px]"
-          />
-        </motion.div>
-      ))}
-    </motion.div>
+    <Container>
+      <motion.div
+        ref={ref}
+        variants={container}
+        initial="hidden"
+        animate={controls}
+        className="mt-36 flex w-full flex-wrap items-center justify-center gap-8 laptop:gap-24 "
+      >
+        {techs.map((item: any) => (
+          <motion.div key={item.name} variants={itemImage}>
+            <Image
+              src={item.image}
+              alt={item.name}
+              className="aspect-auto w-[80px] laptop:w-[120px]"
+            />
+          </motion.div>
+        ))}
+      </motion.div>
+    </Container>
   )
 }
