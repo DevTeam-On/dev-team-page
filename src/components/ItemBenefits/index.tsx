@@ -4,9 +4,9 @@ import { motion } from 'framer-motion'
 
 export default function ItemBenefits({ icon, text }: ItemBenefitsProps) {
   const item = {
-    hidden: { y: 20, opacity: 0 },
+    hidden: { x: 200, opacity: 0 },
     visible: {
-      y: 0,
+      x: 0,
       opacity: 1
     }
   }
