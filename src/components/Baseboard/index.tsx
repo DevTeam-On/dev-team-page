@@ -38,7 +38,7 @@ export default function BaseBoard() {
             </div>
             <div>
               <h2 className="font-semibold">TikTok</h2>
-              <p>@devteam.on</p>
+              <p>@devteamon</p>
             </div>
           </div>
         </div>

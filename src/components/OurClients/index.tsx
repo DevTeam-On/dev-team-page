@@ -1,12 +1,11 @@
 import Image from 'next/image'
 import ClientSoSeu from '@/assets/images/client_soseu.png'
-import FullButton from '../FullButton'
 
 export default function OurClients() {
   return (
     <div
       id="OurClients"
-      className="flex w-full flex-col items-center gap-8 laptop:gap-24"
+      className="flex w-full select-none flex-col items-center gap-8 laptop:gap-24"
     >
       <h1 className="font-mavenPro text-2xl font-semibold text-white laptop:text-5xl">
         Nossos Clientes
@@ -18,7 +17,6 @@ export default function OurClients() {
           height={150}
           alt="Cliente plataforma Só Seu"
         />
-        <FullButton url="https://soseu.com.br/">Visualizar</FullButton>
       </div>
     </div>
   )
