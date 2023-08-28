@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  overflow-x: none;
-}
-
 ::-webkit-scrollbar {
   width: 10px;
 }
