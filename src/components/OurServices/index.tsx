@@ -14,8 +14,7 @@ export default function OurServices() {
           <div>
             <Image
               alt="Imagem ilustrativa de um engrenagem"
-              width={400}
-              height={400}
+              className="h-[220px] w-[250px] laptop:h-[360px] laptop:w-[400px]"
               src={RenderGear}
             />
           </div>
