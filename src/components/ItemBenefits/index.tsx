@@ -14,7 +14,7 @@ export default function ItemBenefits({ icon, text }: ItemBenefitsProps) {
   return (
     <motion.div
       variants={item}
-      className="flex flex-row gap-2 font-titilliumWeb text-white"
+      className="flex flex-row items-center gap-2 font-titilliumWeb text-white"
     >
       <div>{icon}</div>
       <div>{text}</div>

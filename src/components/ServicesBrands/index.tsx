@@ -70,14 +70,14 @@ export function ServicesBrands() {
       variants={container}
       initial="hidden"
       animate={controls}
-      className="mt-36 flex flex-wrap items-center justify-center gap-8 laptop:gap-24 laptop:p-24"
+      className="mt-36 flex flex-wrap items-center justify-center gap-8 laptop:gap-24 laptop:p-8"
     >
       {techs.map((item: any) => (
         <motion.div key={item.name} variants={itemImage}>
           <Image
             src={item.image}
             alt={item.name}
-            className="w-[80px] laptop:w-[120px]"
+            className="aspect-auto w-[80px] laptop:w-[120px]"
           />
         </motion.div>
       ))}
