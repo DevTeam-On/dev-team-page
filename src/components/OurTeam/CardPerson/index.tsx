@@ -3,6 +3,7 @@
 import FullButton from '@/components/FullButton'
 import { CardPersonProps } from './types'
 import { motion } from 'framer-motion'
+import { item } from '../animation'
 
 export default function CardPerson({
   image,
@@ -11,14 +12,6 @@ export default function CardPerson({
   gitHub,
   linkedin
 }: CardPersonProps) {
-  const item = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1
-    }
-  }
-
   return (
     <motion.div
       variants={item}

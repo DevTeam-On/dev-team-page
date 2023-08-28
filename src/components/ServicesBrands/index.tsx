@@ -18,6 +18,7 @@ import Stripe from '@/assets/images/stripe.png'
 import Tailwind from '@/assets/images/tailwind.png'
 import Vercel from '@/assets/images/vercel.png'
 import Vite from '@/assets/images/vite.png'
+import { container, itemImage } from './animation'
 
 export function ServicesBrands() {
   const controls = useAnimation()
@@ -43,26 +44,6 @@ export function ServicesBrands() {
     { name: 'Vercel', image: Vercel },
     { name: 'Vite', image: Vite }
   ]
-
-  const container = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.1,
-        staggerChildren: 0.1
-      }
-    }
-  }
-
-  const itemImage = {
-    hidden: { y: 100, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1
-    }
-  }
 
   return (
     <motion.div

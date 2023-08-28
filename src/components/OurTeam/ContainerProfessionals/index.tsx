@@ -7,6 +7,7 @@ import Roberto from '@/assets/images/roberto_felipe.jpg'
 import Vinicius from '@/assets/images/vinicius_freitas.jpg'
 import Felipe from '@/assets/images/felipe_moreira.jpg'
 import Adrian from '@/assets/images/adrian_moretti.png'
+import { container } from '../animation'
 
 export default function ContainerProfessionals() {
   const controls = useAnimation()
@@ -17,18 +18,6 @@ export default function ContainerProfessionals() {
       controls.start('visible')
     }
   }, [controls, inView])
-
-  const container = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2
-      }
-    }
-  }
 
   return (
     <motion.div

@@ -1,16 +1,9 @@
 'use client'
+import { item } from './animation'
 import { ItemBenefitsProps } from './types'
 import { motion } from 'framer-motion'
 
 export default function ItemBenefits({ icon, text }: ItemBenefitsProps) {
-  const item = {
-    hidden: { x: 200, opacity: 0 },
-    visible: {
-      x: 0,
-      opacity: 1
-    }
-  }
-
   return (
     <motion.div
       variants={item}

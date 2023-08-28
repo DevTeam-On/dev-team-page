@@ -4,6 +4,7 @@ import { useAnimation, motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { BsCheckLg } from 'react-icons/bs'
 import ItemBenefits from '../../ItemBenefits'
+import { container } from './animation'
 
 export default function ContainerBenefits() {
   const controls = useAnimation()
@@ -14,18 +15,6 @@ export default function ContainerBenefits() {
       controls.start('visible')
     }
   }, [controls, inView])
-
-  const container = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2
-      }
-    }
-  }
 
   return (
     <motion.div
