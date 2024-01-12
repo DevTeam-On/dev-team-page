@@ -1,7 +1,7 @@
 import BaseBoard from '@/components/Baseboard'
 import Benefits from '@/components/Benefits'
 import { ServicesBrands } from '@/components/ServicesBrands'
-import InitialContentPage from '@/components/InitalContentPage'
+import InitialContentPage from '@/components/InitialContentPage'
 import OurClients from '@/components/OurClients'
 import OurServices from '@/components/OurServices'
 import OurTeam from '@/components/OurTeam'
