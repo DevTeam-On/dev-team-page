@@ -50,12 +50,6 @@ export default function ContainerProfessionals() {
         linkedin="https://www.linkedin.com/in/vinicius-freire-de-freitas-94105a20b/"
         image={Vinicius}
       />
-
-      <CardPerson
-        description="Product Owner da equipe, responsável pelo Marketing, orçamentos e levantamento de requisistos com clientes."
-        name="Adrian Moretti"
-        image={Adrian}
-      />
     </motion.div>
   )
 }

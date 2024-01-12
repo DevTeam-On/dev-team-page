@@ -26,7 +26,6 @@ export default function BaseBoard() {
                 </div>
                 <div>
                   <h2 className="font-semibold">Telefones</h2>
-                  <p>(11) 95080-7074</p>
                   <p>(11) 94295-3291</p>
                   <p>(11) 97443-9730</p>
                 </div>
